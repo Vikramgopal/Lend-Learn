@@ -23,9 +23,9 @@ function PageNav() {
         </div>
         <button
           onClick={toggleMenu}
-          className="lg:hidden flex items-center text-white text-2xl"
+          className="lg:hidden flex items-center text-white pr-4 text-2xl"
         >
-          {isMenuOpen ? <RxCross1 /> : <GiHamburgerMenu />}
+          {isMenuOpen ? <RxCross1 size={30} /> : <GiHamburgerMenu size={30}/>}
         </button>
       </nav>
       {isMenuOpen && (
