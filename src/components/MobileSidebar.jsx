@@ -1,13 +1,17 @@
 import { useAuth } from "../contexts/FakeAuthContext";
 import { NavLink } from "react-router";
 import User from "./User";
-function MobileSidebar() {
+function MobileSidebar({setIsMenuOpen}) {
   const { user } = useAuth();
-
+  // Close dropdown when a link is clicked
+  const closeDropdown = () => {
+    setIsMenuOpen(false);
+  };
   function SidebarLink({ to, children }) {
     return (
       <NavLink
         to={to}
+        onClick={closeDropdown}
         className={({ isActive }) =>
           isActive
             ? "flex items-center  text-white  p-2 bg-black bg-opacity-50 rounded"
