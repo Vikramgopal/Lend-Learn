@@ -31,7 +31,7 @@ function PageNav() {
       {isMenuOpen && (
         <div className="bg-violet-400 ">
           {" "}
-          <MobileSidebar />
+          <MobileSidebar setIsMenuOpen={setIsMenuOpen} />
         </div>
       )}
     </main>
