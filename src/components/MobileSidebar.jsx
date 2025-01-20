@@ -1,7 +1,7 @@
 import { useAuth } from "../contexts/FakeAuthContext";
 import { NavLink } from "react-router";
 import User from "./User";
-function MobileSidebar() {
+function MobileSidebar({closeDropdown}) {
   const { user } = useAuth();
   // Close dropdown when a link is clicked
 
@@ -15,6 +15,7 @@ function MobileSidebar() {
             ? "flex items-center  text-white  p-2 bg-black bg-opacity-50 rounded"
             : "flex items-center  text-gray-300 hover:text-white p-2"
         }
+          onClick={closeDropdown} // Close dropdown on click
       >
         {children}
       </NavLink>
