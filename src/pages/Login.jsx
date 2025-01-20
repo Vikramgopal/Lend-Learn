@@ -7,7 +7,7 @@ import { useAuth } from "../contexts/FakeAuthContext";
 
 export default function Login() {
   const [email, setEmail] = useState("vikram@login.com");
-  const [password, setPassword] = useState("qwerty");
+  const [password, setPassword] = useState("Vikram@123");
   const [passwordVisible, setPasswordVisible] = useState(false);
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
