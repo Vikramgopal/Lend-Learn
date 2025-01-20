@@ -36,7 +36,7 @@ function App() {
       staffId: "ST-1",
       phoneNumber: "4152636985",
       role: "Admin",
-      password: "qwerty",
+      password: "Vikram@123",
     },
   ]); // Store staff members
   const [StaffCreate, setStaffCreate] = useState(false);
