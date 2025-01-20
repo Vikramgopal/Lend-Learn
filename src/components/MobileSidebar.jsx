@@ -4,9 +4,7 @@ import User from "./User";
 function MobileSidebar({setIsMenuOpen}) {
   const { user } = useAuth();
   // Close dropdown when a link is clicked
-  const closeDropdown = () => {
-    setIsMenuOpen(false);
-  };
+
   function SidebarLink({ to, children }) {
     return (
       <NavLink
@@ -37,7 +35,9 @@ function MobileSidebar({setIsMenuOpen}) {
     { label: "Top Borrowers", to: "topborrower" },
     { label: "Overdues", to: "overduetransaction" },
   ];
-
+  const closeDropdown = () => {
+    setIsMenuOpen(false);
+  };
   return (
     // <div className=" h-full p-4 rounded-md flex flex-col justify-around bg-accent-sidebar overflow-y-scroll scrollbar-hide font-playfair text-white w-[20vw]">
     <div className="h-[88vh] flex flex-col  justify-center">
