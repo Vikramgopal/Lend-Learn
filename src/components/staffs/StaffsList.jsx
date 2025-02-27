@@ -90,7 +90,6 @@ const StaffsList = ({ staffList }) => {
               <th className="border-2 border-neutral-light border-opacity-50  whitespace-nowrap px-4 py-2">
                 Role
               </th>{" "}
-              whitespace-nowrap
             </tr>
           </thead>
           <tbody>
